@@ -27,3 +27,13 @@ variable "environment" {
   default     = "development"
   description = "ec2 environment"
 }
+
+variable "vpc_cidr" {
+  default     = "10.0.0.0/16"
+  description = "CIDR for the VPC"
+  
+}
+variable "vpctag_name" {
+  default     = "main"
+  description = "vpc tag name"
+}
