@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg_ec2_instance" {
   name        = "sg_ec2_instance"
   description = "Allow connection on all port"
-  #vpc_id      = aws_vpc.main.id
+  vpc_id      = aws_vpc.main.id
 
   ingress {
     description      = "TLS from VPC"
